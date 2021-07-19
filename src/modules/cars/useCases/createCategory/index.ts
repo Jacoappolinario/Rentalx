@@ -12,5 +12,4 @@ export default (): CreateCategoryController => {
   );
 
   return createCategoryController;
-  sds;
 };
