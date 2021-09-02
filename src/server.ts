@@ -4,9 +4,10 @@ import swaggerUi from 'swagger-ui-express';
 
 import './database';
 
-import './shared/container';
+import '@shared/container';
 
-import { AppError } from './errors/AppError';
+import { AppError } from '@errors/AppError';
+
 import { router } from './routes';
 import swaggerFile from './swagger.json';
 
@@ -33,4 +34,4 @@ app.use(
   },
 );
 
-app.listen(3333, () => console.log('Server is ruuning!'));
+app.listen(3333, () => console.log('Server is running!'));
