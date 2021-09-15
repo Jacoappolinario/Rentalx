@@ -1,10 +1,10 @@
 # Rentalx
 
-**RF** => Requisitos funcionais.
-**RNF** => Requisitos não funcionais.
-**RN** => Regra de negócio .
+**RF** => Requisitos funcionais.<br>
+**RNF** => Requisitos não funcionais.<br>
+**RN** => Regra de negócio.<br>
 
-# Cadastro de Carro
+## Cadastro de Carro
 
 **RF**
 Deve ser possivel cadastrar um novo carro.
@@ -17,7 +17,7 @@ O carro deve ser cadastrado, por padrão, com disponibilidade.
 O usuário responsável pelo cadastro deve ser um usuário administrador.
 
 
-# Listagem de carros
+## Listagem de carros
 
 **RF**
 Deve ser possivel listar todos os carros disponíveis.
@@ -29,7 +29,7 @@ Deve ser possível listar todos os carros disponíveis pelo nome do carro.
 O usuário não precisa estar logado no sistema.
 
 
-# Cadastro de Especificação no Carro
+## Cadastro de Especificação no Carro
 
 **RF**
 Deve ser possível cadastrar uma especificação para um carro.
@@ -42,7 +42,7 @@ Não deve ser possível cadastrar uma especificação já existente para o mesmo
 O usuário responsável pelo cadastro deve ser um usuário administrador.
 
 
-# Cadastro de Imagens do Carro
+## Cadastro de Imagens do Carro
 
 **RF**
 Deve ser possível cadastrar a imagem do carro.
@@ -56,7 +56,7 @@ O usuário deve poder cadastrar mais de uma imagem para o mesmo carro.
 O usuário responsável pelo cadastro deve ser um usuário administrador.
 
 
-# Aluguel de Carro
+## Aluguel de Carro
 
 **RF** 
 Deve ser possível cadastrar um aluguel.
