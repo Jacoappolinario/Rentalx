@@ -2,13 +2,16 @@ import { Specification } from '@modules/cars/infra/typeorm/entities/Specificatio
 
 import {
   ICreateSpecificationsDTO,
-  ISpecificationRepository,
+  ISpecificationsRepository,
 } from '../ISpecificationsRepository';
 
-class SpecificationsRepositoryInMemory implements ISpecificationRepository {
+class SpecificationsRepositoryInMemory implements ISpecificationsRepository {
   specifications: Specification[] = [];
 
-  async create({ description, name }: ICreateSpecificationsDTO): Promise<void> {
+  async create({
+    description,
+    name,
+  }: ICreateSpecificationsDTO): Promise<Specification> {
     const specification = new Specification();
 
     Object.assign(specification, {
@@ -17,6 +20,8 @@ class SpecificationsRepositoryInMemory implements ISpecificationRepository {
     });
 
     this.specifications.push(specification);
+
+    return specification;
   }
   async findByName(name: string): Promise<Specification> {
     return this.specifications.find(
