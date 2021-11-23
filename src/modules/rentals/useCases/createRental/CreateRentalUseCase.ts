@@ -15,7 +15,7 @@ class CreateRentalUseCase {
     car_id,
     expected_return_date,
   }: IRequest): Promise<void> {
-    //   Não deve ser possível cadastrar um novo aluguel caso já exista um aberto para o mesmo usuário.
+    //   Não deve ser possível cadastrar um novo aluguel caso já exista um aberto para o mesmo carro.
     const carUnavailable = await this.rentalsRepository.findOpenRentalByCar(
       car_id,
     );
@@ -23,8 +23,7 @@ class CreateRentalUseCase {
     if (carUnavailable) {
       throw new AppError('Car is unavailable');
     }
-
-    //   não deve ser possível cadastrar um novo alguel caso já exista um aberto para o mesmo carro.
+    //   Não deve ser possível cadastrar um novo aluguel caso já exista um aberto para o mesmo usuário.
     const rentalOpentToUser = await this.rentalsRepository.findOpenRentalByUser(
       user_id,
     );
