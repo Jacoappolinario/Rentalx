@@ -90,7 +90,7 @@ Deve ser possível realizar a busca de todos os alugueis para o usuário<br>
 **RN**
 O usuário deve estar logado na aplicação<br>
 
-# Recuperar Senha
+## Recuperar Senha
 
 **RF**
 - Deve ser possível o usuário recuperar a senha informando o e-mail<br>
