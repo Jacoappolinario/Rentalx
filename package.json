@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "aws-sdk": "^2.1224.0",
-    "bcrypt": "^5.0.1",
+    "bcryptjs": "^2.4.3",
     "class-transformer": "^0.5.1",
     "csv-parse": "^4.16.0",
     "dayjs": "^1.10.7",
@@ -31,7 +31,7 @@
     "uuid": "^8.3.2"
   },
   "devDependencies": {
-    "@types/bcrypt": "^5.0.0",
+    "@types/bcryptjs": "^2.4.2",
     "@types/express": "^4.17.12",
     "@types/jest": "^27.0.1",
     "@types/jsonwebtoken": "^8.5.4",
