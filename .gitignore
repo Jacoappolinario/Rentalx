@@ -102,3 +102,10 @@ dist
 
 # TernJS port file
 .tern-port
+
+# Tmp folder
+tmp/*
+!tmp/.gitkeep
+
+# ormconfig
+ormconfig.json
