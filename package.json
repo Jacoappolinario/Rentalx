@@ -11,6 +11,8 @@
     "seed:admin": "ts-node-dev -r tsconfig-paths/register src/shared/infra/typeorm/seed/admin.ts"
   },
   "dependencies": {
+    "@sentry/node": "^7.28.1",
+    "@sentry/tracing": "^7.28.1",
     "aws-sdk": "^2.1224.0",
     "bcryptjs": "^2.4.3",
     "class-transformer": "^0.5.1",
@@ -27,7 +29,7 @@
     "nodemailer": "^6.7.5",
     "pg": "^8.6.0",
     "rate-limiter-flexible": "^2.4.1",
-    "redis": "^3.2.1",
+    "redis": "^3.1.2",
     "reflect-metadata": "^0.1.13",
     "swagger-ui-express": "^4.1.6",
     "tsyringe": "^4.6.0",
